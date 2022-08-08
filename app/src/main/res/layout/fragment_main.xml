@@ -5,8 +5,41 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/black"
-    tools:context=".MainFragment">
+    tools:context=".ui.fragment.main.MainFragment">
 
+    <ImageView
+        android:id="@+id/img_more_vert"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:src="@drawable/ic_baseline_more_vert_24"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/container_for_my_custom_view"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:background="@android:color/holo_orange_dark"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="12dp"
+        android:elevation="1dp"
+        />
+
+    <ImageView
+        android:id="@+id/img_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_present_to_all_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="8dp"
+        android:paddingEnd="43dp"
+        android:elevation="2dp"
+        android:visibility="gone"
+        />
     <FrameLayout
         app:layout_constraintBottom_toTopOf="@id/container"
         app:layout_constraintTop_toTopOf="parent"
